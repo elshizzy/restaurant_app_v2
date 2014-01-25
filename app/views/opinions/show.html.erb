@@ -1,0 +1,9 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Opinion:</strong>
+  <%= @opinion.like %>
+</p>
+
+<%= link_to 'Edit', "/restaurants/#{@opinion.restaurant_id}/opinions/#{@opinion.id}/edit" %> |
+<%= link_to 'Back', "/restaurants/#{@opinion.restaurant_id}/opinions/" %>
